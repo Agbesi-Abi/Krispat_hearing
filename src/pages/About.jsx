@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import doc from "../assets/images/doc.jpg";
+import docs from "../assets/images/docs.jpg";
+import hero from "../assets/images/hero-1.jpg";
 
 const AboutUs = () => {
   useEffect(() => {
@@ -18,7 +21,7 @@ const AboutUs = () => {
         <div className="relative">
           {/* Hero Image */}
           <img
-            src="/src/assets/images/hero-1.jpg"
+            src={hero}
             alt="Hero"
             className="object-cover w-full h-[450px] md:h-[595px]"
           />
@@ -44,7 +47,7 @@ const AboutUs = () => {
               {/* Left Image */}
               <div className="flex justify-center">
                 <img
-                  src="/src/assets/images/doc.jpg"
+                  src={docs}
                   alt="Dr. Jane Doe"
                   className="rounded-lg shadow-lg w-full max-w-xs object-cover border-4 border-green"
                 />
@@ -75,7 +78,7 @@ const AboutUs = () => {
             >
               <div className="flex justify-center">
                 <img
-                  src="/src/assets/images/doc.jpg"
+                  src={doc}
                   alt="John Smith"
                   className="rounded-lg shadow-lg w-full max-w-xs object-cover border-4 border-green"
                 />
@@ -104,7 +107,7 @@ const AboutUs = () => {
             >
               <div className="flex justify-center">
                 <img
-                  src="/src/assets/images/docs.jpg"
+                  src={docs}
                   alt="Emily Johnson"
                   className="rounded-lg shadow-lg w-full max-w-xs object-cover border-4 border-green"
                 />

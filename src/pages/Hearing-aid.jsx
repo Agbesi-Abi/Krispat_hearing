@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Hearingaid from "../assets/images/hearing-aid-1.jpg";
+import Hearingaid2 from "../assets/images/hearing-aid-2.jpg";
+import Hearingaid3 from "../assets/images/hearing-aid-4.jpg";
 
 function HearingAid() {
   useEffect(() => {
@@ -41,7 +44,7 @@ function HearingAid() {
           {/* Product Card 1 */}
           <div className="bg-white shadow-md rounded-md p-4" data-aos="fade-up">
             <img
-              src="/src/assets/images/hearing-aid-1.jpg"
+              src={Hearingaid}
               alt="Hearing Aid 1"
               className="w-full h-40 object-cover rounded-md"
             />
@@ -57,7 +60,7 @@ function HearingAid() {
           {/* Product Card 2 */}
           <div className="bg-white shadow-md rounded-md p-4" data-aos="fade-up" data-aos-delay="100">
             <img
-              src="/src/assets/images/hearing-aid-2.jpg"
+              src={Hearingaid2}
               alt="Hearing Aid 2"
               className="w-full h-40 object-cover rounded-md"
             />
@@ -72,7 +75,7 @@ function HearingAid() {
           {/* Product Card 3 */}
           <div className="bg-white shadow-md rounded-md p-4" data-aos="fade-up" data-aos-delay="200">
             <img
-              src="/src/assets/images/hearing-aid-4.jpg"
+              src={Hearingaid3}
               alt="Hearing Aid 3"
               className="w-full h-40 object-cover rounded-md"
             />

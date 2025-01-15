@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import hero from "../assets/images/hero-1.jpg";
 
 const Services = () => {
   useEffect(() => {
@@ -21,7 +22,7 @@ const Services = () => {
         <div className="relative">
           {/* Hero Image */}
           <img
-            src="/src/assets/images/hero-1.jpg"
+            src={hero}
             alt="Hero"
             className="object-cover w-full h-[450px] md:h-[595px]"
           />

@@ -3,6 +3,7 @@ import HeroSection from '../component/HeroSection';
 import Services from './Services';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import docImage from '../assets/images/doctor.jpg';
 
 const Home = () => {
   useEffect(() => {
@@ -54,7 +55,7 @@ const Home = () => {
           {/* Right Image */}
           <div className="flex justify-center" data-aos="zoom-in">
             <img
-              src="/src/assets/images/doctor.jpg"
+              src={docImage}
               alt="Welcome to Krispat Hearing Centre"
               className="rounded-lg shadow-lg w-full max-w-xs object-cover border-4 border-green"
             />
