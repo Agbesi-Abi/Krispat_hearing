@@ -6,11 +6,12 @@ function HeroSection() {
   const images = [
     "/src/assets/images/hero-1.jpg",
     "/src/assets/images/family-1.png",
-    "\src\assets\images\hero-2.jpg",
+    "/src/assets/images/hero-2.jpg",
     "/src/assets/images/male-audiologist-.jpg",
   ];
 
   // Auto-slide effect
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length);
