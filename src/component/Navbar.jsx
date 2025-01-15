@@ -1,4 +1,5 @@
 import { useState } from "react";
+import logo from "../assets/images/logo.png";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -10,7 +11,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <a href="/home">
             <img
-              src="/src/assets/images/logo.png"
+              src={logo}
               alt="Logo"
               className="h-12 w-auto"
             />

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import hero from '../assets/images/hero-1.jpg';
 
 const Contact = () => {
   useEffect(() => {
@@ -16,7 +17,7 @@ const Contact = () => {
       <section className="relative text-white bg-inherit mt-10" data-aos="fade-in">
         <div className="relative">
           <img
-            src="/src/assets/images/hero-1.jpg"
+            src={hero}
             alt="Hero"
             className="object-cover w-full h-[450px] md:h-[595px]"
           />
