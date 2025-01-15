@@ -4,10 +4,10 @@ import "../assets/css/HeroSection.css";
 function HeroSection() {
   const [currentImage, setCurrentImage] = useState(0);
   const images = [
-    "/src/assets/images/hero-1.jpg",
-    "/src/assets/images/family-1.png",
-    "/src/assets/images/hero-2.jpg",
-    "/src/assets/images/male-audiologist-.jpg",
+    "./assets/images/hero-1.jpg",
+    "/assets/images/family-1.png",
+    "/assets/images/hero-2.jpg",
+    "/assets/images/male-audiologist-.jpg",
   ];
 
   // Auto-slide effect

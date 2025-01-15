@@ -11,7 +11,7 @@ const Navbar = () => {
           <a href="/home">
             <img
               src="/src/assets/images/logo.png"
-              alt="Audiology Logo"
+              alt="Logo"
               className="h-12 w-auto"
             />
           </a>
