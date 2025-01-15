@@ -36,7 +36,7 @@ function HeroSection() {
         {/* Image */}
         <img
           src={images[currentImage]}
-          alt="Hero"
+          alt="Hero image"
           className="hero-image w-full  sm:h-[90vh]  object-cover mt-20"
         />
         {/* Overlay */}
