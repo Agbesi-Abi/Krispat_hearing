@@ -36,7 +36,7 @@ function HearingAid() {
       </section>
 
       {/* Product Gallery */}
-      <section className="py-10 px-6 md:px-20">
+      <section className="py-10 px-6 ">
         <h2 className="text-2xl font-semibold text-gray-800 mb-4" data-aos="zoom-in">
           Available Models
         </h2>

@@ -34,7 +34,6 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/reviews" element={<Reviews />} />
       </Routes>
-      <HeroSection />
       <Footer/>
     </Router>
   );

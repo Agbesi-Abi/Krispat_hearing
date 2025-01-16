@@ -175,7 +175,7 @@ const Footer = () => {
           </div>
 
           {/* Social Media Links */}
-          <div className="flex justify-center md:justify-start items-center space-x-4 pt-4">
+          <div className="flex justify-end md:justify-end items-center space-x-4 pt-4">
             <a href="#" className="text-white hover:text-red-400 text-lg">
               <i className="fab fa-facebook"></i>
             </a>

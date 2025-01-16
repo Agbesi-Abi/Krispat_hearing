@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import hero from "../assets/images/hero-1.jpg";
+import { PhoneIcon,  SearchIcon, ShieldCheckIcon, UserIcon, ClipboardIcon, HeartIcon 
+} from "@heroicons/react/outline"; 
 
 const Services = () => {
   useEffect(() => {
@@ -45,9 +47,10 @@ const Services = () => {
               className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300"
               data-aos="fade-up"
             >
-              <h3 className="text-xl font-bold text-gray-800 mb-4">
-                Hearing Tests
-              </h3>
+              <div className="flex items-center mb-4">
+                <SearchIcon className="w-8 h-8 text-green mr-4" />
+                <h3 className="text-xl font-bold text-gray-800">Hearing Tests</h3>
+              </div>
               <p className="text-gray-600 leading-relaxed">
                 Comprehensive audiological assessments to diagnose and treat
                 hearing issues effectively.
@@ -60,9 +63,10 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <h3 className="text-xl font-bold text-gray-800 mb-4">
-                Digital Hearing Aids & Accessories
-              </h3>
+              <div className="flex items-center mb-4">
+                <PhoneIcon className="w-8 h-8 text-green mr-4" /> {/* Updated Icon */}
+                <h3 className="text-xl font-bold text-gray-800">Digital Hearing Aids & Accessories</h3>
+              </div>
               <p className="text-gray-600 leading-relaxed">
                 Sale of advanced digital hearing aids and essential accessories
                 like batteries and earmolds.
@@ -75,9 +79,10 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <h3 className="text-xl font-bold text-gray-800 mb-4">
-                Industrial Hearing Conservation Program
-              </h3>
+              <div className="flex items-center mb-4">
+                <ShieldCheckIcon className="w-8 h-8 text-green mr-4" />
+                <h3 className="text-xl font-bold text-gray-800">Industrial Hearing Conservation Program</h3>
+              </div>
               <p className="text-gray-600 leading-relaxed">
                 Protecting workers' hearing through custom programs designed for
                 industrial environments.
@@ -90,9 +95,10 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              <h3 className="text-xl font-bold text-gray-800 mb-4">
-                Ear Plugs & Hearing Protection
-              </h3>
+              <div className="flex items-center mb-4">
+                <UserIcon className="w-8 h-8 text-green mr-4" />
+                <h3 className="text-xl font-bold text-gray-800">Ear Plugs & Hearing Protection</h3>
+              </div>
               <p className="text-gray-600 leading-relaxed">
                 Custom-made ear plugs and protective devices for noise and water
                 protection.
@@ -105,9 +111,10 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-delay="400"
             >
-              <h3 className="text-xl font-bold text-gray-800 mb-4">
-                Primary Ear-Nose-Throat (ENT) Care
-              </h3>
+              <div className="flex items-center mb-4">
+                <ClipboardIcon className="w-8 h-8 text-green mr-4" />
+                <h3 className="text-xl font-bold text-gray-800">Primary Ear-Nose-Throat (ENT) Care</h3>
+              </div>
               <p className="text-gray-600 leading-relaxed">
                 Basic ENT care services to diagnose and manage ear-related
                 conditions.
@@ -120,9 +127,10 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-delay="500"
             >
-              <h3 className="text-xl font-bold text-gray-800 mb-4">
-                General Ear & Hearing Care
-              </h3>
+              <div className="flex items-center mb-4">
+                <HeartIcon className="w-8 h-8 text-green mr-4" />
+                <h3 className="text-xl font-bold text-gray-800">General Ear & Hearing Care</h3>
+              </div>
               <p className="text-gray-600 leading-relaxed">
                 Comprehensive care to maintain optimal ear health and prevent
                 hearing loss.
