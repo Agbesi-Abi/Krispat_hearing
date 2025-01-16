@@ -1,108 +1,126 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Hearingaid from "../assets/images/hearing-aid-1.jpg";
-import Hearingaid2 from "../assets/images/hearing-aid-2.jpg";
-import Hearingaid3 from "../assets/images/hearing-aid-4.jpg";
+import HearingAid1 from "../assets/images/hearing-aid-1.jpg";
+import HearingAid2 from "../assets/images/hearing-aid-2.jpg";
+import HearingAid3 from "../assets/images/earing-aid-1.jpg";
 
-function HearingAid() {
+const HearingAid = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1200, 
-      offset: 50, 
-      once: true, 
+      duration: 1000,
+      offset: 50,
+      once: true,
     });
   }, []);
 
   return (
-    <div className="bg-gray-50 min-h-screen mt-9">
+    <div className="bg-gray-50">
       {/* Header Section */}
-      <header className="bg-green text-white py-10 text-center" data-aos="fade-down">
-        <h1 className="text-4xl font-bold">Hearing Aids</h1>
-        <p className="mt-2 text-lg">
-          Discover our range of advanced hearing aids designed for your needs.
+      <header className="bg-green-600 text-white py-12 text-center" data-aos="fade-down">
+        <h1 className="text-4xl font-bold">Explore Hearing Aids</h1>
+        <p className="mt-4 text-lg">
+          Discover advanced hearing solutions for all your needs.
         </p>
       </header>
 
-      {/* Introduction Section */}
-      <section className="py-10 px-6 md:px-20" data-aos="fade-right">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">About Our Hearing Aids</h2>
-        <p className="text-gray-600">
-          Our hearing aids are designed with cutting-edge technology to enhance
+      {/* About Section */}
+      <section className="py-10 px-4 sm:px-8 lg:px-20" data-aos="fade-right">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          Why Choose Our Hearing Aids?
+        </h2>
+        <p className="text-gray-600 leading-relaxed">
+          Our hearing aids are designed with cutting-edge technology to improve
           your hearing experience. Whether you're looking for discreet in-ear
-          solutions or powerful behind-the-ear devices, we have something to
-          suit everyone.
+          solutions or powerful behind-the-ear devices, we have the perfect
+          option for you.
         </p>
       </section>
 
       {/* Product Gallery */}
-      <section className="py-10 px-6 ">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4" data-aos="zoom-in">
+      <section className="py-10 px-4 sm:px-8 lg:px-20">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-8 text-center" data-aos="zoom-in">
           Available Models
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Product Card 1 */}
-          <div className="bg-white shadow-md rounded-md p-4" data-aos="fade-up">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Product 1 */}
+          <div
+            className="bg-white rounded-lg shadow-md p-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <img
-              src={Hearingaid}
+              src={HearingAid1}
               alt="Hearing Aid 1"
-              className="w-full h-40 object-cover rounded-md"
+              className="w-full h-48 object-cover rounded-md"
             />
-            <h3 className="text-lg font-bold mt-4">Model A</h3>
-            <p className="text-sm text-gray-600 mt-2">
-              A compact, behind-the-ear hearing aid with advanced sound
+            <h3 className="mt-4 text-lg font-bold text-gray-800">Model A</h3>
+            <p className="text-gray-600 text-sm mt-2">
+              A compact, behind-the-ear hearing aid with superior sound
               processing.
             </p>
-            <button className="mt-4 bg-green text-white py-2 px-4 rounded-md hover:bg-red-700 transition">
+            <button className="mt-4 bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition">
               Learn More
             </button>
           </div>
-          {/* Product Card 2 */}
-          <div className="bg-white shadow-md rounded-md p-4" data-aos="fade-up" data-aos-delay="100">
+
+          {/* Product 2 */}
+          <div
+            className="bg-white rounded-lg shadow-md p-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <img
-              src={Hearingaid2}
+              src={HearingAid2}
               alt="Hearing Aid 2"
-              className="w-full h-40 object-cover rounded-md"
+              className="w-full h-48 object-cover rounded-md"
             />
-            <h3 className="text-lg font-bold mt-4">Model B</h3>
-            <p className="text-sm text-gray-600 mt-2">
-              In-ear hearing aid with noise-canceling technology.
+            <h3 className="mt-4 text-lg font-bold text-gray-800">Model B</h3>
+            <p className="text-gray-600 text-sm mt-2">
+              In-ear hearing aid with noise-canceling technology for clear sound.
             </p>
-            <button className="mt-4 bg-green text-white py-2 px-4 rounded-md hover:bg-red-700 transition">
+            <button className="mt-4 bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition">
               Learn More
             </button>
           </div>
-          {/* Product Card 3 */}
-          <div className="bg-white shadow-md rounded-md p-4" data-aos="fade-up" data-aos-delay="200">
+
+          {/* Product 3 */}
+          <div
+            className="bg-white rounded-lg shadow-md p-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img
-              src={Hearingaid3}
+              src={HearingAid3}
               alt="Hearing Aid 3"
-              className="w-full h-40 object-cover rounded-md"
+              className="w-full h-48 object-cover rounded-md"
             />
-            <h3 className="text-lg font-bold mt-4">Model C</h3>
-            <p className="text-sm text-gray-600 mt-2">
-              Discreet in-ear hearing aid for everyday use.
+            <h3 className="mt-4 text-lg font-bold text-gray-800">Model C</h3>
+            <p className="text-gray-600 text-sm mt-2">
+              Discreet in-ear hearing aid for seamless everyday use.
             </p>
-            <button className="mt-4 bg-green text-white py-2 px-4 rounded-md hover:bg-red-700 transition">
+            <button className="mt-4 bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition">
               Learn More
             </button>
           </div>
         </div>
       </section>
 
-      {/* Call to Action */}
-      <section className="bg-green text-white py-10 text-center" data-aos="fade-up">
-        <h2 className="text-2xl font-semibold">Ready to Improve Your Hearing?</h2>
-        <p className="mt-2 text-lg">
-          Schedule an appointment today and find the perfect hearing aid for
-          you.
+      {/* Call-to-Action Section */}
+      <section
+        className="bg-green-600 text-white py-12 text-center"
+        data-aos="fade-up"
+      >
+        <h2 className="text-2xl font-bold">Enhance Your Hearing Today</h2>
+        <p className="mt-4">
+          Schedule an appointment to find the perfect hearing aid for you.
         </p>
-        <button className="mt-4 bg-white text-green py-2 px-6 rounded-md hover:bg-red-100 transition">
-          Schedule Appointment
+        <button className="mt-6 bg-white text-green-600 py-2 px-6 rounded hover:bg-gray-100 transition">
+          Book Appointment
         </button>
       </section>
     </div>
   );
-}
+};
 
 export default HearingAid;
