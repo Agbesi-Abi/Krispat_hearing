@@ -91,7 +91,7 @@ const Home = () => {
           </p>
           <a
             href="/contact"
-            className="bg-green text-black py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 transition duration-300"
+            className="bg-red-800 text-black py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 transition duration-300"
             data-aos="fade-down"
           >
             Schedule Now
