@@ -38,7 +38,7 @@ function HeroSection() {
         <img
           src={images[currentImage]}
           alt="Hero"
-          className="hero-image w-full sm:h-[90vh] object-cover mt-20"
+          className="hero-image w-full h-[90vh] object-cover mt-20"
         />
       </div>
 

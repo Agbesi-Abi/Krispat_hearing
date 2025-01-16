@@ -13,9 +13,6 @@ import glico from '../assets/images/glico.png';
 import vitality from '../assets/images/vitality.png';
 import metro from '../assets/images/metro.png';
 
-
-
-
 const Footer = () => {
   // Slider settings for testimonials
   const testimonialSliderSettings = {
@@ -79,90 +76,89 @@ const Footer = () => {
       </div>
 
       <div className="bg-gray-50 py-6 text-gray-800">
-  <div className="container mx-auto px-4">
-    <h2 className="text-center text-xl font-bold mb-4">Health Insurance Providers We Serve</h2>
-    <Slider {...logoSliderSettings}>
-      <div className="p-2">
-        <img
-          src={glico}
-          alt="Insurance Logo 1"
-          className="mx-auto h-20 w-20 object-contain"
-        />
+        <div className="container mx-auto px-4">
+          <h2 className="text-center text-xl font-bold mb-4">Health Insurance Providers We Serve</h2>
+          <Slider {...logoSliderSettings}>
+            <div className="p-2">
+              <img
+                src={glico}
+                alt="Insurance Logo 1"
+                className="mx-auto h-20 w-20 object-contain"
+              />
+            </div>
+            <div className="p-2">
+              <img
+                src={acacia}
+                alt="Insurance Logo 2"
+                className="mx-auto h-20 w-20 object-contain"
+              />
+            </div>
+            <div className="p-2">
+              <img
+                src={apex}
+                alt="Insurance Logo 3"
+                className="mx-auto h-20 w-20 object-contain"
+              />
+            </div>
+            <div className="p-2">
+              <img
+                src={universal}
+                alt="Insurance Logo 4"
+                className="mx-auto h-20 w-20 object-contain"
+              />
+            </div>
+            <div className="p-2">
+              <img
+                src={cosmopolitan}
+                alt="Insurance Logo 5"
+                className="mx-auto h-20 w-20 object-contain"
+              />
+            </div>
+            <div className="p-2">
+              <img
+                src={liberty}
+                alt="Insurance Logo 6"
+                className="mx-auto h-20 w-20 object-contain"
+              />
+            </div>
+            <div className="p-2">
+              <img
+                src={premier}
+                alt="Insurance Logo 7"
+                className="mx-auto h-20 w-20 object-contain"
+              />
+            </div>
+            <div className="p-2">
+              <img
+                src={nation}
+                alt="Insurance Logo 8"
+                className="mx-auto h-20 w-20 object-contain"
+              />
+            </div>
+            <div className="p-2">
+              <img
+                src={vitality}
+                alt="Insurance Logo 9"
+                className="mx-auto h-20 w-20 object-contain"
+              />
+            </div>
+            <div className="p-2">
+              <img
+                src={metro}
+                alt="Insurance Logo 10"
+                className="mx-auto h-20 w-20 object-contain"
+              />
+            </div>
+          </Slider>
+        </div>
       </div>
-      <div className="p-2">
-        <img
-          src={acacia}
-          alt="Insurance Logo 2"
-          className="mx-auto h-20 w-20 object-contain"
-        />
-      </div>
-      <div className="p-2">
-        <img
-          src={apex}
-          alt="Insurance Logo 3"
-          className="mx-auto h-20 w-20 object-contain"
-        />
-      </div>
-      <div className="p-2">
-        <img
-          src={universal}
-          alt="Insurance Logo 4"
-          className="mx-auto h-20 w-20 object-contain"
-        />
-      </div>
-      <div className="p-2">
-        <img
-          src={cosmopolitan}
-          alt="Insurance Logo 5"
-          className="mx-auto h-20 w-20 object-contain"
-        />
-      </div>
-      <div className="p-2">
-        <img
-          src={liberty}
-          alt="Insurance Logo 6"
-          className="mx-auto h-20 w-20 object-contain"
-        />
-      </div>
-      <div className="p-2">
-        <img
-          src={premier}
-          alt="Insurance Logo 7"
-          className="mx-auto h-20 w-20 object-contain"
-        />
-      </div>
-      <div className="p-2">
-        <img
-          src={nation}
-          alt="Insurance Logo 8"
-          className="mx-auto h-20 w-20 object-contain"
-        />
-      </div>
-      <div className="p-2">
-        <img
-          src={vitality}
-          alt="Insurance Logo 9"
-          className="mx-auto h-20 w-20 object-contain"
-        />
-      </div>
-      <div className="p-2">
-        <img
-          src={metro}
-          alt="Insurance Logo 10"
-          className="mx-auto h-20 w-20 object-contain"
-        />
-      </div>
-    </Slider>
-  </div>
-</div>
-
 
       {/* Footer Content */}
       <div className="container mx-auto px-4 py-6 bg-green">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* About Section */}
           <div>
-            <h4 className="text-base font-bold mb-2">About Krispat Hearing Centre</h4>
+            <h4 className="text-sm md:text-base font-bold mb-2">About Krispat Hearing Centre</h4>
             <p className="text-xs md:text-sm">
               Enhancing lives through better hearing. Visit us for the latest in audiology solutions.
             </p>
@@ -170,7 +166,7 @@ const Footer = () => {
 
           {/* Contact Section */}
           <div>
-            <h4 className="text-base font-bold mb-2">Contact</h4>
+            <h4 className="text-sm md:text-base font-bold mb-2">Contact</h4>
             <ul className="text-xs md:text-sm space-y-1">
               <li>Phone: +233 123 456 789</li>
               <li>Email: info@krispathearing.com</li>
@@ -179,9 +175,9 @@ const Footer = () => {
           </div>
 
           {/* Social Media Links */}
-          <div className="flex justify-center md:justify-start items-center space-x-4  pt-4">
+          <div className="flex justify-center md:justify-start items-center space-x-4 pt-4">
             <a href="#" className="text-white hover:text-red-400 text-lg">
-              <i className=" fab fa-facebook"></i>
+              <i className="fab fa-facebook"></i>
             </a>
             <a href="#" className="text-white hover:text-red-400 text-lg">
               <i className="fab fa-twitter"></i>
