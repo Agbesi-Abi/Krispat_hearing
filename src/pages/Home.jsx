@@ -44,7 +44,7 @@ const Home = () => {
             </p>
             <a
               href="/about"
-              className="inline-block bg-green text-white py-2 px-4 md:py-3 md:px-6 rounded-lg shadow-md hover:bg-red-800 transition duration-300"
+              className="inline-block bg-green text-white py-2 px-4 md:py-3 md:px-6 rounded-lg shadow-md hover:bg-red-600 transition duration-300"
               data-aos="zoom-in"
               data-aos-delay="300"
             >
@@ -91,7 +91,7 @@ const Home = () => {
           </p>
           <a
             href="/contact"
-            className="bg-red-800 text-black py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 transition duration-300"
+            className="bg-white text-black py-3 px-6 rounded-lg shadow-md hover:bg-red-600 transition duration-300"
             data-aos="fade-down"
           >
             Schedule Now

@@ -147,7 +147,7 @@ const Services = () => {
           </p>
           <a
             href="#contact"
-            className="bg-green text-white py-3 px-6 rounded-lg shadow-md hover:bg-gray-300 transition duration-300"
+            className="bg-green text-white py-3 px-6 rounded-lg shadow-md hover:bg-red-600 transition duration-300"
             data-aos="zoom-in"
           >
             Get in Touch

@@ -19,18 +19,29 @@ const Contact = () => {
           <img
             src={hero}
             alt="Hero"
-            className="object-cover w-full h-[450px] md:h-[595px]"
+            className="object-cover w-full h-[300px] sm:h-[450px] md:h-[595px]" // Responsive height
           />
-          <div className="absolute inset-0 bg-black opacity-50"></div>
+        {/* Dark Overlay */}
+    <div className="absolute inset-0 bg-black opacity-70"></div>
+    
+    <div className="absolute inset-0 flex items-center justify-center px-6 text-center ">
+    <a
+            href="/contact"
+            className="bg-white text-black py-3 px-6 rounded-lg shadow-md hover:bg-red-300 transition duration-300"
+            data-aos="fade-down"
+          >
+            Schedule Now
+          </a>
+    </div>
         </div>
       </section>
 
       {/* Contact Form Section */}
       <section className="py-16 px-6 md:px-12" data-aos="fade-up">
-        <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Contact Form */}
           <div>
-            <h2 className="text-2xl md:text-4xl font-bold text-gray-800 mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-6">
               Get in Touch
             </h2>
             <form className="space-y-6 bg-white p-6 rounded-lg shadow-lg">
@@ -90,7 +101,7 @@ const Contact = () => {
 
           {/* Contact Details */}
           <div className="space-y-6" data-aos="fade-left">
-            <h2 className="text-2xl md:text-4xl font-bold text-gray-800 mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-6">
               Contact Information
             </h2>
             <p className="text-gray-600">
@@ -123,13 +134,13 @@ const Contact = () => {
       {/* Branches Section */}
       <section className="bg-gray-100 py-16 px-6 md:px-12" data-aos="fade-up">
         <div className="container mx-auto text-center">
-          <h2 className="text-2xl md:text-4xl font-bold text-gray-800 mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-6">
             Our Branches
           </h2>
           <p className="text-gray-600 mb-8">
             Visit us at any of our branches across Ghana.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <h3 className="text-xl font-bold text-gray-800">Kumasi</h3>
               <p className="text-gray-600">123 Kumasi Road</p>
@@ -157,7 +168,7 @@ const Contact = () => {
       {/* Map Section */}
       <section className="bg-gray-100 py-16 px-6 md:px-12" data-aos="zoom-in">
         <div className="container mx-auto text-center">
-          <h2 className="text-2xl md:text-4xl font-bold text-gray-800 mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-6">
             Visit Us
           </h2>
           <iframe
