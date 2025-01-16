@@ -17,17 +17,31 @@ const AboutUs = () => {
   return (
     <div className="bg-gray-50">
       {/* Hero Section */}
-      <section className="relative text-black bg-inherit mt-10" data-aos="fade-in">
-        <div className="relative">
-          {/* Hero Image */}
-          <img
-            src={hero}
-            alt="Hero"
-            className="object-cover w-full h-[450px] md:h-[595px]"
-          />
-          <div className="absolute inset-0 bg-black opacity-50"></div>
-        </div>
-      </section>
+      {/* Hero Section */}
+<section className="relative text-white bg-inherit mt-10" data-aos="fade-in">
+  <div className="relative">
+    {/* Hero Image */}
+    <img
+      src={hero}
+      alt="Hero"
+      className="object-cover w-full h-[450px] md:h-[595px]"
+    />
+    {/* Dark Overlay */}
+    <div className="absolute inset-0 bg-black opacity-70"></div>
+    {/* Mission Content */}
+    <div className="absolute inset-0 flex items-center justify-center px-6 text-center">
+      <div>
+        <h1 className="text-3xl md:text-5xl font-bold mb-4">Our Mission</h1>
+        <p className="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
+          At Krispat Hearing Centre, our mission is to transform lives through better hearing. 
+          We are dedicated to providing exceptional audiology services and cutting-edge hearing solutions 
+          tailored to meet the unique needs of every individual.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Team Section */}
       <section className="py-24 px-6 md:px-17">

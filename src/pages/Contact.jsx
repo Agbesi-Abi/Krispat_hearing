@@ -120,6 +120,40 @@ const Contact = () => {
         </div>
       </section>
 
+      {/* Branches Section */}
+      <section className="bg-gray-100 py-16 px-6 md:px-12" data-aos="fade-up">
+        <div className="container mx-auto text-center">
+          <h2 className="text-2xl md:text-4xl font-bold text-gray-800 mb-6">
+            Our Branches
+          </h2>
+          <p className="text-gray-600 mb-8">
+            Visit us at any of our branches across Ghana.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <h3 className="text-xl font-bold text-gray-800">Kumasi</h3>
+              <p className="text-gray-600">123 Kumasi Road</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <h3 className="text-xl font-bold text-gray-800">Accra</h3>
+              <p className="text-gray-600">123 Accra Road</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <h3 className="text-xl font-bold text-gray-800">Takoradi</h3>
+              <p className="text-gray-600">123 Takoradi Road</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <h3 className="text-xl font-bold text-gray-800">Tema</h3>
+              <p className="text-gray-600">123 Tema Road</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <h3 className="text-xl font-bold text-gray-800">Ho</h3>
+              <p className="text-gray-600">123 Ho Road</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Map Section */}
       <section className="bg-gray-100 py-16 px-6 md:px-12" data-aos="zoom-in">
         <div className="container mx-auto text-center">

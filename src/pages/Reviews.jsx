@@ -1,9 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import hero from "../assets/images/hero-1.jpg";
 
 const Reviews = () => {
+  const [showForm, setShowForm] = useState(false);
+
   useEffect(() => {
     AOS.init({
       duration: 1500,
@@ -11,6 +13,10 @@ const Reviews = () => {
       once: true,
     });
   }, []);
+
+  const handleToggleForm = () => {
+    setShowForm((prevShowForm) => !prevShowForm);
+  };
 
   return (
     <div className="bg-gray-50">
@@ -44,110 +50,100 @@ const Reviews = () => {
             What Our Clients Say
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
-            {/* Review 1 */}
+            {/* Example Reviews */}
+            {/* Repeat review blocks as needed */}
             <div
               className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300"
               data-aos="flip-left"
             >
               <p className="text-gray-600 leading-relaxed italic mb-4">
-                "The team at Kripat Hearing Centre was incredibly professional and kind.
-                They took the time to explain my options and made sure I was comfortable
-                throughout the process."
+                "The team at Kripat Hearing Centre was incredibly professional and kind."
               </p>
               <h3 className="text-xl font-bold text-gray-800">John Doe</h3>
-              <p className="text-gray-500">Verified Customer</p>
-            </div>
-
-            {/* Review 2 */}
-            <div
-              className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300"
-              data-aos="flip-right"
-            >
-              <p className="text-gray-600 leading-relaxed italic mb-4">
-                "Excellent service! My new hearing aids have changed my life, and I can't
-                thank the staff enough for their help."
-              </p>
-              <h3 className="text-xl font-bold text-gray-800">Jane Smith</h3>
-              <p className="text-gray-500">Verified Customer</p>
-            </div>
-
-            {/* Review 3 */}
-            <div
-              className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <p className="text-gray-600 leading-relaxed italic mb-4">
-                "From the hearing test to the fitting of my new devices, everything was
-                handled with great care and expertise."
-              </p>
-              <h3 className="text-xl font-bold text-gray-800">Emily Johnson</h3>
-              <p className="text-gray-500">Verified Customer</p>
-            </div>
-
-            {/* Review 4 */}
-            <div
-              className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <p className="text-gray-600 leading-relaxed italic mb-4">
-                "Highly recommend! Their customer service is outstanding, and the staff
-                genuinely cares about their patients."
-              </p>
-              <h3 className="text-xl font-bold text-gray-800">Michael Brown</h3>
-              <p className="text-gray-500">Verified Customer</p>
-            </div>
-
-            {/* Review 5 */}
-            <div
-              className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <p className="text-gray-600 leading-relaxed italic mb-4">
-                "I was impressed with their industrial hearing conservation program.
-                Our team feels much safer now."
-              </p>
-              <h3 className="text-xl font-bold text-gray-800">Sarah Lee</h3>
-              <p className="text-gray-500">Verified Customer</p>
-            </div>
-
-            {/* Review 6 */}
-            <div
-              className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <p className="text-gray-600 leading-relaxed italic mb-4">
-                "Their dedication to providing personalized care is remarkable. I felt
-                like more than just a customer."
-              </p>
-              <h3 className="text-xl font-bold text-gray-800">David Wilson</h3>
               <p className="text-gray-500">Verified Customer</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Call-to-Action */}
+      {/* Leave a Review Section */}
       <section
-        className="bg-green text-white py-16 px-6 md:px-12"
-        data-aos="zoom-in-up"
+        className="py-16 px-6 md:px-12 bg-gray-100"
+        data-aos="fade-up"
       >
         <div className="container mx-auto text-center">
-          <h2 className="text-2xl md:text-4xl font-bold mb-6">We Value Your Feedback</h2>
-          <p className="text-lg md:text-xl mb-6">
-            Share your experience with us and help others make an informed decision.
-          </p>
-          <a
-            href="#leave-review"
-            className="bg-white text-green py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 transition duration-300"
-            data-aos="zoom-in"
+          <h2
+            className="text-2xl md:text-4xl font-bold text-gray-800 mb-8"
           >
             Leave a Review
-          </a>
+          </h2>
+          {/* Button to Toggle the Review Form */}
+          <button
+            onClick={handleToggleForm}
+            className="bg-green text-white py-3 px-6 rounded-lg shadow-md hover:bg-red-500 transition duration-300"
+          >
+            {showForm ? "Cancel" : "Leave a Review"}
+          </button>
         </div>
+
+        {/* Review Form (Hidden Initially) */}
+        {showForm && (
+          <div className="container mx-auto mt-12">
+            <form className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md space-y-6">
+              <div>
+                <label
+                  htmlFor="name"
+                  className="block text-gray-600 font-medium mb-2"
+                >
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="email"
+                  className="block text-gray-600 font-medium mb-2"
+                >
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="review"
+                  className="block text-gray-600 font-medium mb-2"
+                >
+                  Your Review
+                </label>
+                <textarea
+                  id="review"
+                  rows="5"
+                  className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"
+                  placeholder="Share your experience..."
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                className="bg-green text-white py-3 px-6 rounded-lg hover:bg-red-700 transition duration-300"
+              >
+                Submit Review
+              </button>
+            </form>
+          </div>
+        )}
       </section>
     </div>
   );

@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <div className="flex items-center">
-          <a href="/home">
+          <a href="/">
             <img
               src={logo}
               alt="Logo"
@@ -22,7 +22,7 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
           <ul className="hidden md:flex space-x-8 font-semibold text-gray-800 text-sm">
-            <li><a href="/home" className="hover:text-green transition duration-300">HOME</a></li>
+            <li><a href="/" className="hover:text-green transition duration-300">HOME</a></li>
             <li><a href="/about" className="hover:text-green transition duration-300">ABOUT US</a></li>
             <li><a href="/reviews" className="hover:text-green transition duration-300">REVIEWS</a></li>
             <li><a href="/services" className="hover:text-green transition duration-300">SERVICES</a></li>
@@ -34,13 +34,13 @@ const Navbar = () => {
           <div className="flex space-x-4">
             <a
               href="/contact"
-              className="bg-green text-white py-2 px-4 rounded-md shadow hover:bg-green transition duration-300"
+              className="bg-green text-white py-2 px-4 rounded-md shadow hover:bg-red-700 transition duration-300"
             >
               Schedule Appointment
             </a>
             <a
               href="tel:+1234567890"
-              className="bg-green text-white py-2 px-4 rounded-md shadow hover:bg-blue-300 transition duration-300"
+              className="bg-green text-white py-2 px-4 rounded-md shadow hover:bg-red-700 transition duration-300"
             >
               Call Us
             </a>
@@ -68,7 +68,7 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white shadow-md">
           <ul className="space-y-4 font-medium text-gray-700 px-6 py-4">
-            <li><a href="/home" className="block hover:text-green transition duration-300">HOME</a></li>
+            <li><a href="/" className="block hover:text-green transition duration-300">HOME</a></li>
             <li><a href="/about" className="block hover:text-green transition duration-300">ABOUT US</a></li>
             <li><a href="/reviews" className="block hover:text-green transition duration-300">REVIEWS</a></li>
             <li><a href="/services" className="block hover:text-green transition duration-300">SERVICES</a></li>

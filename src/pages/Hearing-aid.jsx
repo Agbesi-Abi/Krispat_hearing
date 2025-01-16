@@ -53,7 +53,7 @@ function HearingAid() {
               A compact, behind-the-ear hearing aid with advanced sound
               processing.
             </p>
-            <button className="mt-4 bg-green text-white py-2 px-4 rounded-md hover:bg-green transition">
+            <button className="mt-4 bg-green text-white py-2 px-4 rounded-md hover:bg-red-700 transition">
               Learn More
             </button>
           </div>
@@ -68,7 +68,7 @@ function HearingAid() {
             <p className="text-sm text-gray-600 mt-2">
               In-ear hearing aid with noise-canceling technology.
             </p>
-            <button className="mt-4 bg-green text-white py-2 px-4 rounded-md hover:bg-green transition">
+            <button className="mt-4 bg-green text-white py-2 px-4 rounded-md hover:bg-red-700 transition">
               Learn More
             </button>
           </div>
@@ -83,7 +83,7 @@ function HearingAid() {
             <p className="text-sm text-gray-600 mt-2">
               Discreet in-ear hearing aid for everyday use.
             </p>
-            <button className="mt-4 bg-green text-white py-2 px-4 rounded-md hover:bg-green transition">
+            <button className="mt-4 bg-green text-white py-2 px-4 rounded-md hover:bg-red-700 transition">
               Learn More
             </button>
           </div>
@@ -97,7 +97,7 @@ function HearingAid() {
           Schedule an appointment today and find the perfect hearing aid for
           you.
         </p>
-        <button className="mt-4 bg-white text-green py-2 px-6 rounded-md hover:bg-gray-100 transition">
+        <button className="mt-4 bg-white text-green py-2 px-6 rounded-md hover:bg-red-100 transition">
           Schedule Appointment
         </button>
       </section>
