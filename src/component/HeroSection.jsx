@@ -38,21 +38,21 @@ function HeroSection() {
         <img
           src={images[currentImage]}
           alt="Hero"
-          className="hero-image w-full h-[90vh] object-cover mt-20"
+          className="hero-image w-full h-[50vh] sm:h-[70vh] md:h-[90vh] object-cover mt-20"
         />
       </div>
 
       {/* Next and Previous Buttons */}
       <button
         onClick={handlePrevious}
-        className="absolute top-1/2 left-4 -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-lg hover:bg-gray-600 focus:outline-none z-20"
+        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-lg hover:bg-gray-600 focus:outline-none z-20 sm:left-6"
         aria-label="Previous Image"
       >
         &larr;
       </button>
       <button
         onClick={handleNext}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-lg hover:bg-gray-600 focus:outline-none z-20"
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-lg hover:bg-gray-600 focus:outline-none z-20 sm:right-6"
         aria-label="Next Image"
       >
         &rarr;
