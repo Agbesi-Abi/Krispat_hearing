@@ -1,152 +1,129 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import hero from "../assets/images/hero-1.jpg";
+import HearingAid1 from "../assets/images/hearing-aid-1.jpg";
+import HearingAid2 from "../assets/images/hearing-aid-2.jpg";
+import HearingAid3 from "../assets/images/earing-aid-1.jpg";
 
-const Reviews = () => {
-  const [showForm, setShowForm] = useState(false);
-
+const HearingAid = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1500,
+      duration: 1000,
       offset: 50,
       once: true,
+      
     });
   }, []);
 
-  const handleToggleForm = () => {
-    setShowForm((prevShowForm) => !prevShowForm);
-  };
-
   return (
     <div className="bg-gray-50">
-      {/* Hero Section */}
-      <section
-        className="relative text-white bg-inherit mt-10"
-        data-aos="fade-in"
-      >
-        <div className="relative">
-          {/* Hero Image */}
-          <img
-            src={hero}
-            alt="Hero"
-            className="object-cover w-full h-[450px] md:h-[595px]"
-          />
-          <div className="absolute inset-0 bg-black opacity-50"></div>
-        </div>
+      {/* Header Section */}
+      <header className="bg-green-600 text-white py-12 text-center" data-aos="fade-down">
+        <h1 className="text-4xl font-bold">Explore Hearing Aids</h1>
+        <p className="mt-4 text-lg">
+          Discover advanced hearing solutions for all your needs.
+        </p>
+      </header>
+
+      {/* About Section */}
+      <section className="py-10 px-4 sm:px-8 lg:px-20" data-aos="fade-right">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          Why Choose Our Hearing Aids?
+        </h2>
+        <p className="text-gray-600 leading-relaxed">
+          Our hearing aids are designed with cutting-edge technology to improve
+          your hearing experience. Whether you're looking for discreet in-ear
+          solutions or powerful behind-the-ear devices, we have the perfect
+          option for you.
+        </p>
       </section>
 
-      {/* Reviews Section */}
-      <section
-        className="py-16 px-6 md:px-12"
-        data-aos="fade-up"
-        data-aos-delay="200"
-      >
-        <div className="container mx-auto">
-          <h2
-            className="text-2xl md:text-4xl font-bold text-gray-800 mb-12 text-center"
-            data-aos="zoom-in"
+      {/* Product Gallery */}
+      <section className="py-10 px-4 sm:px-8 lg:px-20">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-8 text-center" >
+          Available Models
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Product 1 */}
+          <div
+            className="bg-white rounded-lg shadow-md p-4"
+             data-aos="fade-up"
+            data-aos-delay="300"
+            
           >
-            What Our Clients Say
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
-            {/* Example Reviews */}
-            {/* Repeat review blocks as needed */}
-            <div
-              className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300"
-              data-aos="flip-left"
-            >
-              <p className="text-gray-600 leading-relaxed italic mb-4">
-                "The team at Kripat Hearing Centre was incredibly professional and kind."
-              </p>
-              <h3 className="text-xl font-bold text-gray-800">John Doe</h3>
-              <p className="text-gray-500">Verified Customer</p>
-            </div>
+            <img
+  src={HearingAid1}
+  alt="Hearing Aid 1"
+  className="w-full h-auto object-contain border border-red-500"
+/>
+
+            <h3 className="mt-4 text-lg font-bold text-gray-800">Model A</h3>
+            <p className="text-gray-600 text-sm mt-2">
+              A compact, behind-the-ear hearing aid with superior sound
+              processing.
+            </p>
+            <button className="mt-4 bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition">
+              Learn More
+            </button>
+          </div>
+
+          {/* Product 2 */}
+          <div
+            className="bg-white rounded-lg shadow-md p-4"
+             data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <img
+              src={HearingAid2}
+              alt="Hearing Aid 2"
+              className="w-full h-48 object-cover rounded-md"
+            />
+            <h3 className="mt-4 text-lg font-bold text-gray-800">Model B</h3>
+            <p className="text-gray-600 text-sm mt-2">
+              In-ear hearing aid with noise-canceling technology for clear sound.
+            </p>
+            <button className="mt-4 bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition">
+              Learn More
+            </button>
+          </div>
+
+          {/* Product 3 */}
+          <div
+            className="bg-white rounded-lg shadow-md p-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <img
+              src={HearingAid3}
+              alt="Hearing Aid 3"
+              className="w-full h-48 object-cover rounded-md"
+            />
+            <h3 className="mt-4 text-lg font-bold text-gray-800">Model C</h3>
+            <p className="text-gray-600 text-sm mt-2">
+              Discreet in-ear hearing aid for seamless everyday use.
+            </p>
+            <button className="mt-4 bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition">
+              Learn More
+            </button>
           </div>
         </div>
       </section>
 
-      {/* Leave a Review Section */}
+      {/* Call-to-Action Section */}
       <section
-        className="py-16 px-6 md:px-12 bg-gray-100"
+        className="bg-green-600 text-white py-12 text-center"
         data-aos="fade-up"
       >
-        <div className="container mx-auto text-center">
-          <h2
-            className="text-2xl md:text-4xl font-bold text-gray-800 mb-8"
-          >
-            Leave a Review
-          </h2>
-          {/* Button to Toggle the Review Form */}
-          <button
-            onClick={handleToggleForm}
-            className="bg-green text-white py-3 px-6 rounded-lg shadow-md hover:bg-red-500 transition duration-300"
-          >
-            {showForm ? "Cancel" : "Leave a Review"}
-          </button>
-        </div>
-
-        {/* Review Form (Hidden Initially) */}
-        {showForm && (
-          <div className="container mx-auto mt-12">
-            <form className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md space-y-6">
-              <div>
-                <label
-                  htmlFor="name"
-                  className="block text-gray-600 font-medium mb-2"
-                >
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
-                  placeholder="Your Name"
-                  required
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="email"
-                  className="block text-gray-600 font-medium mb-2"
-                >
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
-                  placeholder="Your Email"
-                  required
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="review"
-                  className="block text-gray-600 font-medium mb-2"
-                >
-                  Your Review
-                </label>
-                <textarea
-                  id="review"
-                  rows="5"
-                  className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"
-                  placeholder="Share your experience..."
-                  required
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                className="bg-green text-white py-3 px-6 rounded-lg hover:bg-red-700 transition duration-300"
-              >
-                Submit Review
-              </button>
-            </form>
-          </div>
-        )}
+        <h2 className="text-2xl font-bold">Enhance Your Hearing Today</h2>
+        <p className="mt-4">
+          Schedule an appointment to find the perfect hearing aid for you.
+        </p>
+        <button className="mt-6 bg-white text-green-600 py-2 px-6 rounded hover:bg-gray-100 transition">
+          Book Appointment
+        </button>
       </section>
     </div>
   );
 };
 
-export default Reviews;
+export default HearingAid;
