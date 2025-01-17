@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import hero from "../assets/images/hero-1.jpg";
+import hero from "../assets/images/patient.jpg";
 import { PhoneIcon,  SearchIcon, ShieldCheckIcon, UserIcon, ClipboardIcon, HeartIcon 
 } from "@heroicons/react/outline"; 
 
@@ -158,7 +158,7 @@ const Services = () => {
             className="bg-green text-white py-3 px-6 rounded-lg shadow-md hover:bg-red-600 transition duration-300"
             data-aos="zoom-in"
           >
-            Get in Touch
+            SCHEDULE TODAY
           </a>
         </div>
       </section>
