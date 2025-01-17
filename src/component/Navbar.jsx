@@ -72,7 +72,7 @@ const Navbar = () => {
             <li><a href="/about" className="block hover:text-green transition duration-300">ABOUT US</a></li>
             <li><a href="/reviews" className="block hover:text-green transition duration-300">REVIEWS</a></li>
             <li><a href="/services" className="block hover:text-green transition duration-300">SERVICES</a></li>
-            <li><a href="/hearing-aids" className="block hover:text-green transition duration-300">HEARING AIDS</a></li>
+            <li><a href="/reviews" className="block hover:text-green transition duration-300">HEARING AIDS</a></li>
             <li><a href="/contact" className="block hover:text-green transition duration-300">CONTACT US</a></li>
             {/* CTA Buttons 
             <li>
