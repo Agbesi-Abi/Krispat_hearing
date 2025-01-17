@@ -50,10 +50,11 @@ const HearingAid = () => {
             
           >
             <img
-              src={HearingAid1}
-              alt="Hearing Aid 1"
-              className="w-full h-48 object-cover rounded-md"
-            />
+  src={HearingAid1}
+  alt="Hearing Aid 1"
+  className="w-full h-auto object-contain border border-red-500"
+/>
+
             <h3 className="mt-4 text-lg font-bold text-gray-800">Model A</h3>
             <p className="text-gray-600 text-sm mt-2">
               A compact, behind-the-ear hearing aid with superior sound
