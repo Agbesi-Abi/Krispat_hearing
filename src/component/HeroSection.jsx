@@ -43,12 +43,17 @@ function HeroSection() {
       </div>
 
       {/* Hero Title */}
-      <h2 className="absolute inset-0 flex justify-center items-center text-white text-2xl sm:text-3xl md:text-6xl font-bold z-20 text-center px-4 italic font-serif">
-        Hearing well is not a Previledge 
-      </h2>
-      <span className="bg-gradient-to-r from-green via-green to-blue bg-clip-text text-black font-bold ">
-         but your RIGHT
-      </span>
+      <h2 className="absolute inset-0 flex flex-col justify-center items-center text-white text-xl sm:text-2xl md:text-4xl font-bold z-20 text-center px-4 italic font-serif leading-snug">
+  Hearing well is not a <span >
+    Previlege
+  </span>
+  <span className="block text-xl sm:text-2xl md:text-4xl font-bold text-center mt-4 text-gray-200">
+  but your <span className="text-white font-extrabold">RIGHT</span>
+</span>
+</h2>
+
+
+
 
       {/* Next and Previous Buttons */}
      
