@@ -112,13 +112,13 @@ const Contact = () => {
                 <span className="text-blue-600">
                   <i className="fas fa-phone-alt"></i>
                 </span>
-                <p className="text-gray-600">+123 456 7890</p>
+                <p className="text-gray-600">+233 (0)24 887 8171</p>
               </div>
               <div className="flex items-center space-x-4">
                 <span className="text-blue-600">
                   <i className="fas fa-envelope"></i>
                 </span>
-                <p className="text-gray-600">info@krispat.com</p>
+                <p className="text-gray-600">ckweitsu@yahoo.com</p>
               </div>
               <div className="flex items-center space-x-4">
                 <span className="text-blue-600">

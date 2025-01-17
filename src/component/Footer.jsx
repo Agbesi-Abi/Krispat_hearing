@@ -168,8 +168,8 @@ const Footer = () => {
           <div>
             <h4 className="text-sm md:text-base font-bold mb-2">Contact</h4>
             <ul className="text-xs md:text-sm space-y-1">
-              <li>Phone: +233 123 456 789</li>
-              <li>Email: info@krispathearing.com</li>
+              <li>Phone: +233 (0)24 887 8171</li>
+              <li>Email: ckweitsu@yahoo.com</li>
               <li>Address: 123 Hearing Lane, Accra, Ghana</li>
             </ul>
           </div>
