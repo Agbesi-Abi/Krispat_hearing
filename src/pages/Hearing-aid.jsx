@@ -39,15 +39,15 @@ const HearingAid = () => {
 
       {/* Product Gallery */}
       <section className="py-10 px-4 sm:px-8 lg:px-20">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-8 text-center" data-aos="zoom-in">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-8 text-center" >
           Available Models
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Product 1 */}
           <div
             className="bg-white rounded-lg shadow-md p-4"
-            data-aos="fade-up"
-            data-aos-delay="100"
+           
+            
           >
             <img
               src={HearingAid1}
@@ -67,8 +67,7 @@ const HearingAid = () => {
           {/* Product 2 */}
           <div
             className="bg-white rounded-lg shadow-md p-4"
-            data-aos="fade-up"
-            data-aos-delay="200"
+           
           >
             <img
               src={HearingAid2}
