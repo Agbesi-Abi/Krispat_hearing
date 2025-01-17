@@ -74,7 +74,7 @@ const Navbar = () => {
             <li><a href="/services" className="block hover:text-green transition duration-300">SERVICES</a></li>
             <li><a href="/hearing-aid" className="block hover:text-green transition duration-300">HEARING AIDS</a></li>
             <li><a href="/contact" className="block hover:text-green transition duration-300">CONTACT US</a></li>
-            <li> <a href="/appointment" className="block hover:text-green transition duration-300">Book Appointment</a></li>
+            <li> <a href="/appointment" className="block hover:text-green transition duration-300">BOOK APPOINTMENT</a></li>
             {/* CTA Buttons 
             <li>
               <a
