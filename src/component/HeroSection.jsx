@@ -13,7 +13,7 @@ function HeroSection() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 4000); 
+    }, 4000);
 
     return () => clearInterval(interval);
   }, [images.length]);
@@ -42,21 +42,17 @@ function HeroSection() {
         />
       </div>
 
+      {/* Hero Title */}
+      <h2 className="absolute inset-0 flex justify-center items-center text-white text-2xl sm:text-3xl md:text-6xl font-bold z-20 text-center px-4 italic font-serif">
+        Hearing well is not a Previledge 
+      </h2>
+      <span className="bg-gradient-to-r from-green via-green to-blue bg-clip-text text-black font-bold ">
+         but your RIGHT
+      </span>
+
       {/* Next and Previous Buttons */}
-      <button
-        onClick={handlePrevious}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-lg hover:bg-gray-600 focus:outline-none z-20 sm:left-6"
-        aria-label="Previous Image"
-      >
-        &larr;
-      </button>
-      <button
-        onClick={handleNext}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-lg hover:bg-gray-600 focus:outline-none z-20 sm:right-6"
-        aria-label="Next Image"
-      >
-        &rarr;
-      </button>
+     
+      
     </div>
   );
 }

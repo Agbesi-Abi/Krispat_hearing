@@ -30,17 +30,22 @@ const Home = () => {
           {/* Left Text */}
           <div className="space-y-4 md:space-y-6">
             <h1 className="text-2xl md:text-4xl font-bold text-green">
-              Welcome to KRISPAT Hearing Centre !
+              Welcome to KRISPAT Hearing Centre!
             </h1>
-            <h1 className="text-green font-bold text-xl">A Note From Dr.Kweitsu</h1>
+            <h2 className="text-green font-bold text-xl">A Note From Dr. Kweitsu</h2>
             <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-              Empowering lives through sound: Our mission at Krispat Hearing Centre is to provide unparalleled care, support, and solutions for individuals experiencing hearing challenges.
+              Empowering lives through sound: Our mission at Krispat Hearing Centre is to
+              provide unparalleled care, support, and solutions for individuals experiencing
+              hearing challenges.
             </p>
             <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-              We are dedicated to enhancing quality of life by delivering innovative hearing healthcare services with compassion, expertise, and integrity.
+              We are dedicated to enhancing quality of life by delivering innovative hearing
+              healthcare services with compassion, expertise, and integrity.
             </p>
             <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-              Through personalized attention and cutting-edge technology, we strive to enable everyone to reconnect with the world of sound, fostering independence, confidence, and wellbeing.
+              Through personalized attention and cutting-edge technology, we strive to enable
+              everyone to reconnect with the world of sound, fostering independence,
+              confidence, and wellbeing.
             </p>
             <a
               href="/about"
@@ -57,7 +62,7 @@ const Home = () => {
             <img
               src={docImage}
               alt="Welcome to Krispat Hearing Centre"
-              className="rounded-lg shadow-lg w-full max-w-xs object-cover border-4 border-green"
+              className="rounded-lg shadow-lg w-full max-w-xs md:max-w-md object-cover border-4 border-green"
             />
           </div>
         </div>
@@ -73,7 +78,8 @@ const Home = () => {
             Our Featured Services
           </h2>
           <p className="text-gray-700 text-lg mb-10">
-            Discover the comprehensive hearing care services we offer to meet your unique needs.
+            Discover the comprehensive hearing care services we offer to meet your unique
+            needs.
           </p>
           <Services />
         </div>
@@ -87,7 +93,8 @@ const Home = () => {
         <div className="container mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Ready to Hear Better?</h2>
           <p className="text-lg md:text-xl mb-6">
-            Schedule an appointment today and take the first step toward improving your hearing.
+            Schedule an appointment today and take the first step toward improving your
+            hearing.
           </p>
           <a
             href="/contact"
