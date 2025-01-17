@@ -26,7 +26,7 @@ const Contact = () => {
     
     <div className="absolute inset-0 flex items-center justify-center px-6 text-center ">
     <a
-            href="/contact"
+            href="/appointment"
             className="bg-white text-black py-3 px-6 rounded-lg shadow-md hover:bg-red-300 transition duration-300"
             data-aos="fade-down"
           >

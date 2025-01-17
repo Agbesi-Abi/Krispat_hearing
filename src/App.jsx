@@ -12,6 +12,7 @@ import HeroSection from './component/HeroSection';
 import Reviews from './pages/Reviews';
 import HearingAid from './pages/Hearing-aid';
 import { useEffect } from 'react';
+import AppointmentForm from './pages/AppointmentForm';
 
 const App = () => {
   useEffect(() => {
@@ -33,6 +34,7 @@ const App = () => {
         <Route path="/hearing-aid" element={<HearingAid />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/reviews" element={<Reviews />} />
+        <Route path="/appointment" element={<AppointmentForm />} />
       </Routes>
       <Footer/>
     </Router>

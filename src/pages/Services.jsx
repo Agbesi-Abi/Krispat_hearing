@@ -128,11 +128,11 @@ const Services = () => {
             our services.
           </p>
           <a
-            href="#contact"
+            href="/appointment"
             className="inline-block bg-white text-green py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 transition duration-300"
             data-aos="zoom-in"
           >
-            SCHEDULE TODAY
+            Contact Us
           </a>
         </div>
       </section>

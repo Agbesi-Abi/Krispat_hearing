@@ -97,11 +97,11 @@ const Home = () => {
             hearing.
           </p>
           <a
-            href="/contact"
+            href="/appointment"
             className="bg-white text-black py-3 px-6 rounded-lg shadow-md hover:bg-red-600 transition duration-300"
             data-aos="fade-down"
           >
-            Schedule Now
+            SCHEDULE NOW
           </a>
         </div>
       </section>

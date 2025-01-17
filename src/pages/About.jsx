@@ -153,7 +153,7 @@ const AboutUs = () => {
             Have questions? Contact us today to schedule an appointment or learn more about our services.
           </p>
           <a
-            href="#contact"
+            href="/appointment"
             className="bg-white text-green py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 transition duration-300"
           >
             Contact Us

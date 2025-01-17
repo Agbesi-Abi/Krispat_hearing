@@ -33,7 +33,7 @@ const Navbar = () => {
           {/* Call to Action Buttons */}
           <div className="flex space-x-4">
             <a
-              href="/contact"
+              href="/appointment"
               className="bg-green text-white py-2 px-4 rounded-md shadow hover:bg-red-700 transition duration-300"
             >
               Schedule Appointment
@@ -74,6 +74,7 @@ const Navbar = () => {
             <li><a href="/services" className="block hover:text-green transition duration-300">SERVICES</a></li>
             <li><a href="/hearing-aid" className="block hover:text-green transition duration-300">HEARING AIDS</a></li>
             <li><a href="/contact" className="block hover:text-green transition duration-300">CONTACT US</a></li>
+            <li> <a href="/appointment" className="block hover:text-green transition duration-300">Book Appointment</a></li>
             {/* CTA Buttons 
             <li>
               <a

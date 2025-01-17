@@ -118,9 +118,11 @@ const HearingAid = () => {
         <p className="mt-4">
           Schedule an appointment to find the perfect hearing aid for you.
         </p>
+        <a href="/appointment">
         <button className="mt-6 bg-white text-gray-800 py-2 px-6 rounded hover:bg-red-700 transition">
           Book Appointment
         </button>
+        </a>
       </section>
     </div>
   );
